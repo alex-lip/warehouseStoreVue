@@ -2,11 +2,11 @@
 <template>
   <div id="app" class="container-fluid appContainer">
 
-    <nav id="nav" class="navbar navbar-light bg-light navbar-expand-md mb-1 row d-flex justify-content-sm-center">
+    <nav id="nav" class="navbar navbar-light bg-light navbar-expand-md mb-1 row no-gutters d-flex justify-content-sm-center">
       <!-- Logo --> 
       <div class="col-sm-3">
       <router-link class="navbar-brand" v-bind:to="{ name: 'home' }">
-        ⚙️ Warehouse Store
+         <h1>⚙️ Warehouse Store</h1>
       </router-link>
       </div>
 
@@ -68,6 +68,7 @@ import HomeHero from "@/components/HomeHero.vue";
 export default {
   components: {
     NavCategories,
+    HomeHero,
   }
 };
 </script>
@@ -75,6 +76,23 @@ export default {
 <!-- Application-Wide Styles go here. 
      Any valid CSS or SCSS is allowable here. See https://sass-lang.com/documentation/style-rules for info on SCSS -->
 <style lang="scss">
+:root {
+    --primary-color: #02203C;
+    --secondary-color: #626EE3;
+    --dark-color: #15314B;
+    --accent-color: #F44292;
+    --light-color: #f4f4f4;
+    --success-color: #5CB85C;
+    --error-color: #D9534F;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+
 .appContainer {
   font-family: "Montserrat", sans-serif;
   padding: 0;
@@ -82,11 +100,11 @@ export default {
 
 #nav {
   color: black;
+  padding: 0;
 }
 .nav-item {
   color: black;
   font-size: 18px;
-  padding: 5px;
 }
 
 /* Logo Style */
@@ -131,7 +149,7 @@ export default {
 }
 
 .btn-search {
-  background-color: #626ee3;
+  background-color: var(--secondary-color);
   color: white;
   height: 47px;
   width: 80px;
@@ -143,9 +161,57 @@ export default {
 }
 
 .btn-search:hover {
-  background-color: #02203c;
+  background-color: var(--primary-color);
   color: white;
 }
+
+/* Utility CSS */
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-dark {
+    color: var(--dark-color);
+}
+
+.text-light {
+    color: var(--light-color);
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+/* Background colors */
+.bg-dark {
+    background-color: var(--primary-color);
+}
+
+/* Text Sizes */
+.lead {
+    font-size: 20px;
+}
+
+.sm {
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 1.2rem;
+}
+
+.lg {
+    font-size: 2.5rem;
+}
+.xl {
+    font-size: 4rem;
+}
+
 
 
 </style>
