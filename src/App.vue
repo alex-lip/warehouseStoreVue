@@ -4,7 +4,7 @@
 
     <nav id="nav" class="navbar navbar-light bg-light navbar-expand-md mb-1 row no-gutters d-flex justify-content-sm-center">
       <!-- Logo --> 
-      <div class="col-sm-3">
+      <div class="col-sm-3 pl-2">
       <router-link class="navbar-brand" v-bind:to="{ name: 'home' }">
          <h1>⚙️ Warehouse Store</h1>
       </router-link>
@@ -58,17 +58,20 @@
 
     <NavCategories />
     <HomeHero />
+    <HomeCategories />
   </div>
 </template>
 
 <script>
 import NavCategories from "@/components/NavCategories.vue";
 import HomeHero from "@/components/HomeHero.vue";
+import HomeCategories from "@/components/HomeCategories.vue"
 
 export default {
   components: {
     NavCategories,
     HomeHero,
+    HomeCategories,
   }
 };
 </script>

@@ -14,9 +14,15 @@
                   <p><i class="fas fa-glasses pr-3"></i>Identify the most important attributes</p>
                   <p><i class="fas fa-link pr-3"></i>Link you to the best source</p>
                   <p><i class="fas fa-plus pr-3"></i>Constantly add to our catalog</p>
-             
+        
           </div>
+      </div>
+      <div class="container">
+      <div class="row text-center">
+          <div class="col-12 mt-3"><h3>Shop by Category</h3></div>
           
+      </div>
+      <hr>
       </div>
   </div>
 </template>
