@@ -6,7 +6,7 @@
       <!-- Logo --> 
       <div class="col-sm-3">
       <router-link class="navbar-brand" v-bind:to="{ name: 'home' }">
-        Warehouse Store ⚙️
+        ⚙️ Warehouse Store
       </router-link>
       </div>
 
@@ -47,7 +47,7 @@
           </router-link>
 
           <router-link class="nav-item mr-sm-2" v-bind:to="{ name: 'login' }">
-            How it Works
+            About
           </router-link>
 
         </div>
@@ -57,11 +57,13 @@
     <router-view />
 
     <NavCategories />
+    <HomeHero />
   </div>
 </template>
 
 <script>
 import NavCategories from "@/components/NavCategories.vue";
+import HomeHero from "@/components/HomeHero.vue";
 
 export default {
   components: {
@@ -87,6 +89,7 @@ export default {
   padding: 5px;
 }
 
+/* Logo Style */
 .navbar-brand {
   color: black;
   font-size: 32px;
@@ -115,7 +118,8 @@ export default {
   height: 45px;
   padding-left: 15px;
   width: 320px;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 300;
   border: none;
   border-radius: 2px;
   font-family: "Montserrat", sans-serif;
@@ -142,4 +146,6 @@ export default {
   background-color: #02203c;
   color: white;
 }
+
+
 </style>
