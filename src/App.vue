@@ -67,7 +67,7 @@
 import NavCategories from "@/components/NavCategories.vue";
 import HomeHero from "@/components/HomeHero.vue";
 import HomeCategories from "@/components/HomeCategories.vue";
-import FooterComponent from "@/component/FooterComponent.vue";
+import FooterComponent from "@/components/FooterComponent.vue";
 
 export default {
   components: {

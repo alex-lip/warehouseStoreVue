@@ -23,6 +23,16 @@ export default {
 </script>
 
 <style>
+
+.footer {
+    background-color: var(--primary-color);
+    color: #FFF;
+}
+
+.social i {
+    color: #FFF;
+    padding: 10px;
+}
   
 .logo {
     font-size: 32px;
