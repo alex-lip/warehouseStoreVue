@@ -60,6 +60,7 @@
     <HomeHero />
     <HomeCategories />
     <FooterComponent />
+    <ProductCategories />
   </div>
 </template>
 
@@ -68,6 +69,7 @@ import NavCategories from "@/components/NavCategories.vue";
 import HomeHero from "@/components/HomeHero.vue";
 import HomeCategories from "@/components/HomeCategories.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
+import ProductCategories from "@/components/ProductCategories.vue"
 
 export default {
   components: {
@@ -75,6 +77,7 @@ export default {
     HomeHero,
     HomeCategories,
     FooterComponent,
+    ProductCategories,
   }
 };
 </script>

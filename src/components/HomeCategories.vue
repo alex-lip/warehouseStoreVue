@@ -6,7 +6,7 @@
         <img
           src="https://1m28fbq9etc1rj5ga1fu0k61-wpengine.netdna-ssl.com/wp-content/uploads/2016/11/TS-etched.png"
           alt="Tapered Roller Bearings"
-          width="400px" height="400px"
+          width="420px" height="400px"
         />
       </div>
       <div class="col-md-7">

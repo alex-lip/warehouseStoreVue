@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
       <div class="row d-flex justify-content-center my-2 mx-lg-3 mx-sm-2">
-          <div class="col-lg-7 hero mr-lg-2 mb-2 d-flex flex-column justify-content-start">
+          <div class="col-lg-7 hero mr-lg-2 mb-2 d-flex flex-column justify-content-center">
             <h2 class="pt-3 lg text-center">The easiest way to find the right bearing.</h2>
             <p class="pt-3 md text-center">Our goal is to build the most comprehensive and best organized product
                 catalog of bearing and mechanical power transmission products.
@@ -19,7 +19,7 @@
       </div>
       <div class="container">
       <div class="row text-center">
-          <div class="col-12 mt-3"><h3>Shop by Category</h3></div>
+          <div class="col-12 mt-3"><h3>Categories</h3></div>
           
       </div>
       <hr>
