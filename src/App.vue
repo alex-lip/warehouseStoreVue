@@ -59,6 +59,7 @@
     <NavCategories />
     <HomeHero />
     <HomeCategories />
+    <FooterComponent />
   </div>
 </template>
 
@@ -66,14 +67,14 @@
 import NavCategories from "@/components/NavCategories.vue";
 import HomeHero from "@/components/HomeHero.vue";
 import HomeCategories from "@/components/HomeCategories.vue";
-import AppFooter from "@/component/AppFooter.vue";
+import FooterComponent from "@/component/FooterComponent.vue";
 
 export default {
   components: {
     NavCategories,
     HomeHero,
     HomeCategories,
-    AppFooter,
+    FooterComponent,
   }
 };
 </script>
