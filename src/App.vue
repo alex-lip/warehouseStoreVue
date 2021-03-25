@@ -65,13 +65,15 @@
 <script>
 import NavCategories from "@/components/NavCategories.vue";
 import HomeHero from "@/components/HomeHero.vue";
-import HomeCategories from "@/components/HomeCategories.vue"
+import HomeCategories from "@/components/HomeCategories.vue";
+import AppFooter from "@/component/AppFooter.vue";
 
 export default {
   components: {
     NavCategories,
     HomeHero,
     HomeCategories,
+    AppFooter,
   }
 };
 </script>
