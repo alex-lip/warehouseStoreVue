@@ -1,13 +1,12 @@
 <template>
   <div class="container-fluid bg-light">
     <div class="row product-group pb-2">
-      <div class="col-md-5">
+      <div class="col-md-5 d-flex flex-column pl-5">
         <h2 class="m-2 ml-4">Bearings</h2>
         <img
           src="https://1m28fbq9etc1rj5ga1fu0k61-wpengine.netdna-ssl.com/wp-content/uploads/2016/11/TS-etched.png"
           alt="Tapered Roller Bearings"
-          width="400px"
-          class="ml-5"
+          width="400px" height="400px"
         />
       </div>
       <div class="col-md-7">
