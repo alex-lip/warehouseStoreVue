@@ -198,6 +198,9 @@ export default {
     background-color: var(--primary-color);
 }
 
+.bg-light {
+  background-color: var(--light-color);
+}
 /* Text Sizes */
 .lead {
     font-size: 20px;

@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid">
-    <div class="row product-group">
+  <div class="container-fluid bg-light">
+    <div class="row product-group pb-2">
       <div class="col-md-5">
         <h2 class="m-2 ml-4">Bearings</h2>
         <img
@@ -106,6 +106,9 @@
         </div>
       </div>
     </div>
+    <div class="d-flex justify-content-end mr-5 bg-light">
+        <p>See All Bearings<i id="seeAll" class="fas fa-angle-right pl-2"></i></p>
+    </div>
   </div>
 </template>
 
@@ -114,9 +117,6 @@ export default {};
 </script>
 
 <style>
-.product-group {
-  background-color: var(--light-color);
-}
 
 .product-box {
   height: 144px;
@@ -135,5 +135,9 @@ export default {};
 
 .product-box p {
   font-size: 14px;
+}
+
+#seeAll {
+    color: #000;
 }
 </style>
