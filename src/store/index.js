@@ -23,7 +23,8 @@ if(currentToken && currentToken != 'undefined') {
 export default new Vuex.Store({
   state: {
     token: currentToken || '',
-    user: currentUser || {} // If a user is an admin, their user.role will be 'admin'
+    user: currentUser || {}, // If a user is an admin, their user.role will be 'admin'
+    product_categories: [],
   },
   mutations: {
     SET_AUTH_TOKEN(state, token) {
@@ -44,6 +45,9 @@ export default new Vuex.Store({
     },
     SET_PRODUCTS(state,data) {
       state.products = data;
+    },
+    SET_PRODUCT_CATEGORIES(state,data) {
+      state.product_categories = data;
     }
   }
 })
