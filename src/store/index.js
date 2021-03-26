@@ -24,7 +24,7 @@ export default new Vuex.Store({
   state: {
     token: currentToken || '',
     user: currentUser || {}, // If a user is an admin, their user.role will be 'admin'
-    product_categories: [],
+    productcategories: [],
   },
   mutations: {
     SET_AUTH_TOKEN(state, token) {
@@ -47,7 +47,7 @@ export default new Vuex.Store({
       state.products = data;
     },
     SET_PRODUCT_CATEGORIES(state,data) {
-      state.product_categories = data;
+      state.productcategories = data;
     }
   }
 })

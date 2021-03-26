@@ -1,30 +1,52 @@
 <template>
-  <h1>Hello World</h1>
+  <div>
+      <div v-for="pc in filteredList" v-bind:key="pc.productCategoryId">
+          <ul>
+            <li>{{ pc.name }}</li>
+      </ul>
+      </div>
+      
+  </div>
 </template>
 
 <script>
-import ProductService from "../services/ProductService";
+import productService from "../services/ProductService";
 
 export default {
-    name: "Product-Categories",
+    name: "ProductCategories",
 
     data() {
         return {
-            filter: {
-                id: null,
-                pcName: "",
-                pcUrl: "",
-            },
+            // filter: {
+            //     id: null,
+            //     pcName: "",
+            //     pcUrl: "",
+            // },
         }
     },
 
     methods: {
         getProductCategories() {
-            ProductService.getAllProductCategories().then((response) => {
-                this.$store.commit("SET_PRODUCT_CATEGORIES". response.data);
+            productService.getAllProductCategories().then((response) => {
+                this.$store.commit("SET_PRODUCT_CATEGORIES", response.data);
             });
         },
+    },
+
+    created() {
+        // Populate the $store with all product categories
+        this.getProductCategories();
+    },
+
+    computed: {
+        filteredList() {
+            let filteredList = this.$store.state.productcategories;
+
+            return filteredList;
+        }
     }
+
+
 }
 </script>
 

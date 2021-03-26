@@ -72,8 +72,6 @@ import HomeCategories from "@/components/HomeCategories.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
 import ProductCategories from "@/components/ProductCategories.vue"
 
-import ProductService from "./services/ProductService";
-
 export default {
   components: {
     NavCategories,
